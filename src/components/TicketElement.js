@@ -6,9 +6,9 @@ const monthNames = ["январь", "февраль", "март", "апрель"
 
 const dayNames = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
 
-const TicketElement = (props) => {
-  const arrivalDate = props.item['arrival_date'];
-  const departureDate = props.item['departure_date'];
+const TicketElement = ({item, currency}) => {
+  const arrivalDate = item['arrival_date'];
+  const departureDate = item['departure_date'];
   const ad = new Date(
     "20" + arrivalDate.substring(arrivalDate.lastIndexOf('.') + 1),
     arrivalDate.substring(arrivalDate.indexOf('.') + 1, arrivalDate.lastIndexOf('.')) - 1,
@@ -27,29 +27,29 @@ const TicketElement = (props) => {
         <button className="App-main__element__button">
           <p className="App-main__element__button__label">Купить</p>
           <p className="App-main__element__button__label">за
-            {props.currency === "rub" && ` ${Math.round(props.item['price'] * 100) / 100}₽`}
-            {props.currency === "usd" && ` ${Math.round(props.item['price'] * 10 / 63.29) / 10}$`}
-            {props.currency === "eur" && ` ${Math.round(props.item['price'] * 10 / 71.42) / 10}€`}
+            {currency === "rub" && ` ${Math.round(item['price'] * 100) / 100}₽`}
+            {currency === "usd" && ` ${Math.round(item['price'] * 10 / 63.29) / 10}$`}
+            {currency === "eur" && ` ${Math.round(item['price'] * 10 / 71.42) / 10}€`}
           </p>
         </button>
       </div>
 
       <div className="App-main__element__semi-block App-main__element__semi-block_right">
         <div className="App-main__element__semi-block__part">
-          <span className="App-main__element__semi-block__time">{props.item['departure_time']}</span>
+          <span className="App-main__element__semi-block__time">{item['departure_time']}</span>
           <div className="App-main__element__semi-block__time_transfer">
             <p className="App-main__element__semi-block__time_transfer__text">
-              {props.item['stops'] > 0 && (`${props.item['stops']} ${props.item['stops'] === 1 ? "пересадка" : "пересадки"}`)}
+              {item['stops'] > 0 && (`${item['stops']} ${item['stops'] === 1 ? "пересадка" : "пересадки"}`)}
             </p>
             <hr className="App-main__hr"/>
             <div className="App-main__plane"/>
           </div>
-          <span className="App-main__element__semi-block__time">{props.item['arrival_time']}</span>
+          <span className="App-main__element__semi-block__time">{item['arrival_time']}</span>
         </div>
 
         <div className="App-main__element__semi-block__part">
-          <span className="App-main__element__semi-block__city">{props.item['origin']}, {props.item['origin_name']}</span>
-          <span className="App-main__element__semi-block__city">{props.item['destination_name']}, {props.item['destination']}</span>
+          <span className="App-main__element__semi-block__city">{item['origin']}, {item['origin_name']}</span>
+          <span className="App-main__element__semi-block__city">{item['destination_name']}, {item['destination']}</span>
         </div>
 
         <div className="App-main__element__semi-block__part">

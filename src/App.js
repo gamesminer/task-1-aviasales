@@ -1,12 +1,9 @@
 import React, {useState} from 'react';
 
-import {
-  CustomCurrency,
-  compare
-} from './components/helpers'
-
-import TicketElement from './components/TicketElement'
-import CustomCheckbox from './components/CustomCheckbox'
+import TicketElement from './components/TicketElement';
+import CustomCheckbox from './components/CustomCheckbox';
+import CustomCurrency from './components/CustomCurrency';
+import {compare} from './components/helpers';
 
 import storage from './tickets'
 import logo from './img/logo.png'
@@ -32,7 +29,7 @@ function App() {
 
             <div className="currency">
               <p className="App-aside__title">Валюта</p>
-              <div className="currency__list">
+              <div className="currency-list">
                 <CustomCurrency value="rub" index="first" currency={currency} setCurrency={setCurrency}/>
                 <CustomCurrency value="usd" index="second" currency={currency} setCurrency={setCurrency}/>
                 <CustomCurrency value="eur" index="third" currency={currency} setCurrency={setCurrency}/>
