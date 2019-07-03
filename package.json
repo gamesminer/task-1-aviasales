@@ -2,7 +2,7 @@
   "name": "tz_aviasales",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/gamesminer/task-1-aviasales",
+  "homepage": "https://gamesminer.github.io/task-1-aviasales/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
