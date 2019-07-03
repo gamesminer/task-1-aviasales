@@ -8,7 +8,7 @@ import {
 import TicketElement from './components/TicketElement'
 import CustomCheckbox from './components/CustomCheckbox'
 
-import storage from '../tasks/tickets'
+import storage from './tickets'
 import logo from './img/logo.png'
 
 import './styles/App.scss';

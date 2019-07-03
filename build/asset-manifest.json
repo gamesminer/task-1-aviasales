@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/task-1-aviasales/static/css/main.6b9eddd7.chunk.css",
+    "main.js": "/task-1-aviasales/static/js/main.a06b6304.chunk.js",
+    "main.js.map": "/task-1-aviasales/static/js/main.a06b6304.chunk.js.map",
+    "runtime~main.js": "/task-1-aviasales/static/js/runtime~main.26b6f5d0.js",
+    "runtime~main.js.map": "/task-1-aviasales/static/js/runtime~main.26b6f5d0.js.map",
+    "static/js/2.39770cbb.chunk.js": "/task-1-aviasales/static/js/2.39770cbb.chunk.js",
+    "static/js/2.39770cbb.chunk.js.map": "/task-1-aviasales/static/js/2.39770cbb.chunk.js.map",
+    "index.html": "/task-1-aviasales/index.html",
+    "precache-manifest.7173b720127897aa3b66a391ff10a5dd.js": "/task-1-aviasales/precache-manifest.7173b720127897aa3b66a391ff10a5dd.js",
+    "service-worker.js": "/task-1-aviasales/service-worker.js",
+    "static/css/main.6b9eddd7.chunk.css.map": "/task-1-aviasales/static/css/main.6b9eddd7.chunk.css.map",
+    "static/media/logo.png": "/task-1-aviasales/static/media/logo.36971439.png",
+    "static/media/App.scss": "/task-1-aviasales/static/media/turkish.fc293473.png"
+  }
+}
