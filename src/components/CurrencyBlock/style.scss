@@ -1,0 +1,21 @@
+.currency {
+  margin-bottom: 3rem;
+
+  &-list {
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+
+    @media (min-width: 200px) and (max-width:832px) {
+      justify-content: center;
+    }
+
+    @media (min-width: 200px) and (max-width:427px) {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 200px) and (max-width:1550px) {
+    margin-bottom: 0;
+  }
+}

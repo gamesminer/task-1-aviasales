@@ -1,0 +1,45 @@
+.currency-list {
+  &__button {
+    border: 1px solid #D2D5D6;
+    background-color: #FFFFFF;
+    color: #3EA4F5;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+
+    &_first {
+      border-right: 0.5px solid #D2D5D6;
+      border-radius: 6px 0 0 6px;
+
+      @media (min-width: 200px) and (max-width: 427px) {
+        border-right: 1px solid #D2D5D6;
+        border-bottom: 0.5px solid #D2D5D6;
+        border-radius: 6px 6px 0 0;
+      }
+    }
+
+    &_third {
+      border-left: 0.5px solid #D2D5D6;
+      border-radius: 0 6px 6px 0;
+
+      @media (min-width: 200px) and (max-width: 427px) {
+        border-left: 1px solid #D2D5D6;
+        border-top: 0.5px solid #D2D5D6;
+        border-radius: 0 0 6px 6px;
+      }
+    }
+
+    &_active {
+      color: #FFFFFF;
+      background-color: #2196F3;
+    }
+
+    &:hover:not(&_active) {
+      background-color: #F3FCFE;
+      color: #3EA4F5;
+      border-color: #64B5F5;
+    }
+  }
+};

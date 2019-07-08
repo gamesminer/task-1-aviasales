@@ -1,0 +1,60 @@
+.App-header {
+  padding: 3rem;
+  text-align: center;
+}
+
+.App-section {
+  margin: 0 12rem;
+  display: flex;
+
+  @media (min-width: 1102px) and (max-width:1550px) {
+    flex-direction: column;
+    margin: 0 8rem;
+  }
+
+  @media (min-width: 200px) and (max-width:1101px) {
+    flex-direction: column;
+    margin: 0 3rem;
+  }
+}
+
+.App-aside {
+  padding: 1rem 0;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  &__title {
+    text-transform: uppercase;
+    padding: 0 1rem;
+  }
+
+  @media (min-width: 832px) and (max-width:1550px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 200px) and (max-width:832px) {
+    text-align: center;
+  }
+}
+
+.App-main {
+  margin: 0 0 1rem 3rem;
+
+  @media (min-width: 200px) and (max-width:1550px) {
+    margin: 2rem 0 0;
+  }
+}
+
+.aside {
+  min-width: 330px;
+
+  @media (min-width: 200px) and (max-width:427px) {
+    min-width: auto;
+  }
+}
+
+.main {
+  width: 100%
+}

@@ -4,10 +4,12 @@
   "private": true,
   "homepage": "https://gamesminer.github.io/task-1-aviasales/",
   "dependencies": {
+    "firebase": "^6.2.4",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {

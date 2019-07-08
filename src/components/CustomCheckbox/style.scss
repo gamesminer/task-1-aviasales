@@ -1,0 +1,45 @@
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  &__label {
+    display: inline;
+    color: #4C4142;
+    font-size: 15.9px;
+    margin: 0 0 0 0.5rem;
+  }
+
+  input {
+    display: none;
+  }
+
+  span {
+    height: 16px;
+    width: 16px;
+    border: 1px solid #2196F3;
+    display: inline-block;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    padding: 3px;
+  }
+
+  [type=checkbox]:checked + span:before {
+    content: '\2714';
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-size: 18px;
+    color: #2196F3;
+  }
+
+  &:hover {
+    background-color: #F1FCFE;
+  }
+
+  @media (min-width: 200px) and (max-width: 1310px) {
+    flex-basis: 43.7%;
+  }
+}

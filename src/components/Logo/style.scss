@@ -1,0 +1,50 @@
+.logo {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 50%;
+
+  @media (min-width: 200px) and (max-width:1101px) {
+    display: none;
+  }
+}
+
+.logo g.clouds  {
+  transform: translateX(-160px);
+}
+
+.loader{
+  width:195px;
+  height:195px;
+  border-radius: 50%;
+}
+
+.loader g.clouds  {
+  position: relative;
+  animation: clouds 4s linear infinite;
+}
+.loader g.plane  {
+  position: relative;
+  animation: plane 8s linear infinite;
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-400px);
+  }
+}
+
+@keyframes plane {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
