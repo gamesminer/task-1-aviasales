@@ -4,13 +4,13 @@ import "firebase/storage";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyArforO5vSGylgGO4BK0vkxtuT1Mu5Sjck",
-  authDomain: "tz-aviasales.firebaseapp.com",
-  databaseURL: "https://tz-aviasales.firebaseio.com",
-  projectId: "tz-aviasales",
-  storageBucket: "",
-  messagingSenderId: "322434351956",
-  appId: "1:322434351956:web:1ea8b738c50d2c88"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 export const FirebaseService = initializeApp(config);
