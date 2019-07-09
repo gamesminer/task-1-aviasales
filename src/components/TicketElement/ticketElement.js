@@ -1,4 +1,5 @@
 import React from "react";
+import {checkCurrency} from '../helpers';
 
 const monthNames = ["январь", "февраль", "март", "апрель", "май", "июнь",
   "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"
@@ -27,9 +28,7 @@ const TicketElement = ({item, currency}) => {
         <button className="App-main__element__button">
           <p className="App-main__element__button__label">Купить</p>
           <p className="App-main__element__button__label">за
-            {currency === "rub" && ` ${Math.round(item['price'] * 100) / 100}₽`}
-            {currency === "usd" && ` ${Math.round(item['price'] * 10 / 63.29) / 10}$`}
-            {currency === "eur" && ` ${Math.round(item['price'] * 10 / 71.42) / 10}€`}
+            {checkCurrency(currency, item['price'])}
           </p>
         </button>
       </div>

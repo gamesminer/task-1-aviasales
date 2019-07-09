@@ -1,20 +1,15 @@
-.App-header {
-  padding: 3rem;
-  text-align: center;
-}
-
 .App-section {
-  margin: 0 12rem;
+  margin: 6rem 12rem 0;
   display: flex;
 
   @media (min-width: 1102px) and (max-width:1550px) {
     flex-direction: column;
-    margin: 0 8rem;
+    margin: 6rem 8rem 0;
   }
 
   @media (min-width: 200px) and (max-width:1101px) {
     flex-direction: column;
-    margin: 0 3rem;
+    margin: 6rem 3rem 0;
   }
 }
 

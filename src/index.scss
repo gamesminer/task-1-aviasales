@@ -1,11 +1,13 @@
 @import "pages/Storage/style";
-@import "components/CurrencyBlock/style";
-@import "components/CustomCheckbox/style";
-@import "components/CustomCurrency/style";
-@import "components/Loader/style";
-@import "components/Logo/style";
-@import "components/NumberOfTransfersBlock/style";
-@import "components/TicketElement/style";
+
+@import "blocks/CurrencyBlock/currencyBlock";
+@import "blocks/NumberOfTransfersBlock/numberOfTransfersBlock";
+
+@import "components/CustomCheckbox/customCheckbox";
+@import "components/CustomCurrency/customCurrency";
+@import "components/Loader/loader";
+@import "components/Logo/logo";
+@import "components/TicketElement/ticketElement";
 
 body {
   margin: 0;
@@ -25,4 +27,15 @@ button::-moz-focus-inner {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }

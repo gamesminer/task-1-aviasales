@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomCurrency from "../CustomCurrency/customCurrency";
+import CustomCurrency from "../../components/CustomCurrency/customCurrency";
 
 const CurrencyBlock = ({currency, setCurrency}) => {
   return (

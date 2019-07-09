@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomCheckbox from "../CustomCheckbox/customCheckbox";
+import CustomCheckbox from "../../components/CustomCheckbox/customCheckbox";
 
 const NumberOfTransfersBlock = ({setCheck, checkedTransfer}) => {
   return (

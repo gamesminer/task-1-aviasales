@@ -75,10 +75,15 @@
           font-weight: bold;
         }
 
-        @media (min-width: 200px) and (max-width:450px) {
+        @media (min-width: 345px) and (max-width:450px) {
           &:first-child:after {
             content: '-';
           }
+        }
+
+        @media (min-width: 200px) and (max-width:344px) {
+          width: 100%;
+          text-align: center;
         }
       }
 
